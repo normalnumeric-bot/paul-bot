@@ -21,6 +21,12 @@ button{width:100%;padding:14px;border-radius:12px;border:none;font-weight:900;fo
 .waitBox{background:#f59e0b;color:black;text-align:center;padding:14px;border-radius:12px;font-weight:900;display:none}
 .realTag{background:#22c55e;color:black;padding:3px 8px;border-radius:10px;font-size:10px;font-weight:900}
 </style>
+<script>
+// TOTAL SILENCE - BLOCK ALL VOICE FOREVER
+if('speechSynthesis' in window){ speechSynthesis.cancel(); speechSynthesis.speak = function(){}; }
+window.speak = function(){};
+window.beep = function(){};
+</script>
 </head>
 <body>
 
@@ -28,7 +34,7 @@ button{width:100%;padding:14px;border-radius:12px;border:none;font-weight:900;fo
 <p style="text-align:center;font-size:12px;color:#facc15;margin:0 0 10px 0;">You must register with my link first before bot go work for you</p>
 
 <div class="welcome" id="welcome">
-<h2>👋 Welcome Bestie! REAL SMC BOT</h2>
+<h2>👋 PAUL REAL SMC BOT</h2>
 <p style="font-size:13px">This na <span class="realTag">REAL MARKET ONLY - NO OTC</span><br><br>I go only tell you to trade when market hit <b>STRONG</b> Support / Resistance + BOS / CHOCH.<br>If market confused, I go tell you <b>WAIT</b>.</p>
 <button class="green" onclick="startBot()">✅ START REAL BOT - I UNDERSTAND</button>
 <p style="font-size:11px;color:#94a3b8">Real Forex / Gold / BTC - Monday to Friday</p>
