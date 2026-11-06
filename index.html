@@ -4,7 +4,7 @@
  <link rel="manifest" href="manifest.json">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paul REAL SMC BOT v12 - CODE LOCK</title>
+<title>Paul Real SMC Bot - Professional</title>
 <style>
 body{background:#050a14;color:white;font-family:sans-serif;padding:10px;margin:0}
 .welcome{background:linear-gradient(135deg,#0f172a,#1e293b);padding:20px;border-radius:16px;text-align:center;border:2px solid #22c55e}
@@ -33,23 +33,23 @@ window.speak = function(){}; window.beep = function(){};
 
 <div class="welcome" id="welcome">
 <h2>👋 PAUL REAL SMC BOT</h2>
-<p style="font-size:13px">This na <span class="realTag">REAL MARKET ONLY - NO OTC</span><br><br>🔒 <b>BOT IS LOCKED WITH CODE</b><br>You must truly open Exness account first. No fake.</p>
+<p style="font-size:13px">This is <span class="realTag">REAL MARKET ONLY - NO OTC</span><br><br>🔒 <b>BOT IS LOCKED WITH CODE</b><br>You must open a real Exness account first to unlock this bot.</p>
 
 <div id="step1Box" style="background:#2a1a05;border:2px solid #FFD700;padding:15px;border-radius:14px;">
-<b>👉 STEP 1: OPEN REAL EXNESS ACCOUNT</b><br>
-<span style="font-size:12px;">Tap below, register for real, then send your UID to Paul for WhatsApp to confirm your Open Date.</span><br><br>
-<a id="exnessBtn" href="https://one.toexness.com/a/xxrgrvy4fa" target="_blank" onclick="markExnessClicked()" style="display:block;background:#FFD700;color:#000;text-align:center;padding:16px;font-weight:900;border-radius:12px;text-decoration:none;font-size:17px;">🔓 STEP 1: CREATE EXNESS ACCOUNT - CLICK ME</a>
-<p id="step1Status" style="font-size:12px;color:#f87171;margin:8px 0 0 0;">❌ You never open Exness link yet.</p>
+<b>👉 STEP 1: OPEN A REAL EXNESS ACCOUNT</b><br>
+<span style="font-size:12px;">Click below, register with my link, then send your UID to Paul on WhatsApp to confirm your account opening date.</span><br><br>
+<a id="exnessBtn" href="https://one.toexness.com/a/xxrgrvy4fa" target="_blank" onclick="markExnessClicked()" style="display:block;background:#FFD700;color:#000;text-align:center;padding:16px;font-weight:900;border-radius:12px;text-decoration:none;font-size:17px;">🔓 STEP 1: CREATE EXNESS ACCOUNT - CLICK HERE</a>
+<p id="step1Status" style="font-size:12px;color:#f87171;margin:8px 0 0 0;">❌ You have not opened the Exness link yet.</p>
 </div>
 
 <div class="lockBox" id="step2Box">
 <b>🔐 STEP 2: UNLOCK WITH CODE FROM PAUL</b><br>
-<span style="font-size:12px;color:#facc15;">After Paul don check your Exness Open Date for him dashboard, e go send you code.</span><br><br>
+<span style="font-size:12px;color:#facc15;">After Paul has checked your Exness account opening date on his dashboard, he will send you the unlock code.</span><br><br>
 <input id="exnessId" type="text" placeholder="1. Your Exness UID / Email">
 <input id="unlockCode" type="text" placeholder="2. Unlock Code from Paul">
-<button id="unlockBtn" class="green disabledBtn" onclick="unlockBot()">🔒 UNLOCK BOT - DO STEP 1 FIRST</button>
+<button id="unlockBtn" class="green disabledBtn" onclick="unlockBot()">🔒 UNLOCK BOT - COMPLETE STEP 1 FIRST</button>
 <p id="lockMsg" style="font-size:12px;color:#f87171;display:none;margin-top:8px;"></p>
-<p style="font-size:11px;color:#94a3b8;margin-top:8px;">No Code? Send your Exness UID to Paul for WhatsApp.<br>Paul go check your Open Date, then give you code.</p>
+<p style="font-size:11px;color:#94a3b8;margin-top:8px;">No Code? Send your Exness UID to Paul on WhatsApp.<br>Paul will check your opening date and send you the code.</p>
 </div>
 
 <p style="font-size:11px;color:#94a3b8;margin-top:10px;">Real Forex / Gold / BTC - Monday to Friday<br>No Real Exness Account = No Signal</p>
@@ -57,9 +57,9 @@ window.speak = function(){}; window.beep = function(){};
 
 <div id="main" style="display:none">
 <div style="background:#0f2815;padding:10px;border-radius:12px;text-align:center;font-size:12px;border:1px solid #22c55e;margin-bottom:10px;">
-✅ <b>UNLOCKED</b> - Exness: <span id="showId"></span> | <a href="#" onclick="lockAgain();return false;" style="color:#facc15;">Lock again</a>
+✅ <b>UNLOCKED</b> - Exness: <span id="showId"></span> | <a href="#" onclick="lockAgain();return false;" style="color:#facc15;">Lock Again</a>
 </div>
-<input id="twelve" type="password" placeholder="TwelveData Key - Paste here for REAL live price">
+<input id="twelve" type="password" placeholder="TwelveData Key - Paste here for real live price">
 <button class="gray" onclick="saveKeys()">💾 Save Key</button>
 <div class="card" style="text-align:center;border-left:5px solid #22c55e">
 <b>🟢 LIVE REAL MARKET <span class="realTag">REAL - NO OTC</span></b><br>
@@ -68,23 +68,22 @@ window.speak = function(){}; window.beep = function(){};
 <span style="font-size:10px;color:#94a3b8">Source: TwelveData Real Market Feed</span>
 </div>
 <div id="alertBox" class="alertBox">🔔 STRONG SIGNAL! PLACE TRADE NOW!</div>
-<div id="waitBox" class="waitBox">⏳ WAIT - MARKET CONFUSED</div>
+<div id="waitBox" class="waitBox">⏳ WAIT - MARKET IS CONFUSED</div>
 <button class="blue" onclick="checkMarket(true)">🔍 CHECK REAL MARKET NOW</button>
 <div id="out"></div>
 <div class="card" style="font-size:11px">
 <b>📚 REAL SMC RULES:</b><br>
-✅ <b>STRONG SUPPORT:</b> Price touch same low 3x + big green candle bounce = BUY<br>
-✅ <b>STRONG RESISTANCE:</b> Price touch same high 3x + big red candle reject = SELL<br>
-✅ <b>BOS:</b> Price break previous High/Low with strong candle = Trend continue<br>
-✅ <b>CHOCH:</b> Price break opposite side = Trend don change!<br>
-✅ <b>CONFIRMATION:</b> Must get 3 confirmations before bot shout TRADE<br>
-❌ <b>CONFUSED:</b> Price dey middle = WAIT, no trade<br>
-<b>⚠️ This bot na for REAL pairs only. No OTC. No weekend fake market.</b>
+✅ <b>STRONG SUPPORT:</b> Price touches the same low 3 times + strong green candle bounce = BUY<br>
+✅ <b>STRONG RESISTANCE:</b> Price touches the same high 3 times + strong red candle rejection = SELL<br>
+✅ <b>BOS:</b> Price breaks previous High / Low with a strong candle = Trend continues<br>
+✅ <b>CHOCH:</b> Price breaks the opposite side = Trend has changed!<br>
+✅ <b>CONFIRMATION:</b> Bot waits for 3 confirmations before giving a TRADE signal<br>
+❌ <b>CONFUSED:</b> Price is in the middle = WAIT, do not trade<br>
+<b>⚠️ This bot is for REAL pairs only. No OTC. No weekend fake market.</b>
 </div>
 </div>
 
 <script>
-// === PAUL SECRET CODE ===
 let CORRECT_CODE = "PAUL-2085";
 let cur = { 'EUR/USD':1.1191, 'GBP/USD':1.3414, 'XAU/USD':3907, 'BTC/USD':77675, 'USD/JPY':154.20, 'AUD/USD':0.6540 };
 let lastBlock=-1;
@@ -112,26 +111,26 @@ function updateStep1UI(){
   let s1 = document.getElementById('step1Status');
   let box = document.getElementById('step1Box');
   let btn = document.getElementById('unlockBtn');
-  if(s1){ s1.innerText = '✅ Good! You don open Exness link. Now enter UID + Code from Paul below.'; s1.style.color = '#22c55e'; }
+  if(s1){ s1.innerText = '✅ Great! You have opened the Exness link. Now enter your UID and Code from Paul below.'; s1.style.color = '#22c55e'; }
   if(box){ box.classList.add('stepDone'); }
-  if(btn){ btn.classList.remove('disabledBtn'); btn.innerText = '✅ UNLOCK BOT - I DON OPEN EXNESS'; }
+  if(btn){ btn.classList.remove('disabledBtn'); btn.innerText = '✅ UNLOCK BOT - I HAVE OPENED EXNESS'; }
 }
 function unlockBot(){
   if(!exnessClicked && localStorage.getItem('paul_clicked_exness') !== 'yes'){
     let m = document.getElementById('lockMsg'); m.style.display='block';
-    m.innerText = '❌ STOP! You never open Exness link yet. Tap STEP 1 yellow button first.';
+    m.innerText = '❌ Please open the Exness link first. Click the yellow button in Step 1.';
     return;
   }
   let id = document.getElementById('exnessId').value.trim();
   let code = document.getElementById('unlockCode').value.trim();
   if(!id || id.length < 4){
     let m = document.getElementById('lockMsg'); m.style.display='block';
-    m.innerText = '❌ Abeg enter your Exness UID / Email first.';
+    m.innerText = '❌ Please enter your Exness UID / Email first.';
     return;
   }
   if(code !== CORRECT_CODE){
     let m = document.getElementById('lockMsg'); m.style.display='block';
-    m.innerText = '❌ WRONG CODE! This code no correct. Send your UID to Paul for WhatsApp, make e check your Exness Open Date, e go give you correct code.';
+    m.innerText = '❌ WRONG CODE! This code is incorrect. Please send your UID to Paul on WhatsApp so he can check your Exness opening date and give you the correct code.';
     return;
   }
   localStorage.setItem('paul_exness_unlocked', id);
@@ -144,7 +143,7 @@ function lockAgain(){ localStorage.removeItem('paul_exness_unlocked'); location.
 function saveKeys(){
  let t=document.getElementById('twelve').value.trim();
  if(t) localStorage.setItem('twelve',t);
- alert('✅ Saved! Now bot go use real live price');
+ alert('Saved! The bot will now use real live prices.');
 }
 async function fetchLive(){
  let key=localStorage.getItem('twelve')||document.getElementById('twelve').value.trim();
@@ -179,13 +178,13 @@ function analyze(pair, price){
  let structure='', action='', conf=0, reason='', status='WAIT';
  let isUp = hist.length>2 && price > hist[hist.length-2];
  let isDown = hist.length>2 && price < hist[hist.length-2];
- if(distS < 0.12){ structure='✅ HIT STRONG SUPPORT (3x Touch)'; action='BUY'; conf=92; reason=`Price touch Support ${lv.s} 3 times and bounce with strong candle. Buyers don take over. BOS up confirmed.`; status='STRONG'; }
- else if(distR < 0.12){ structure='✅ HIT STRONG RESISTANCE (3x Touch)'; action='SELL'; conf=92; reason=`Price touch Resistance ${lv.r} 3 times and reject with strong candle. Sellers don take over. BOS down confirmed.`; status='STRONG'; }
- else if(price > lv.r && isUp){ structure='🚀 BOS - BREAK OF STRUCTURE UP'; action='BUY'; conf=88; reason=`Price break Resistance ${lv.r} with strong green candle. Previous High broken. Trend continue UP. Enter on retest.`; status='STRONG'; }
- else if(price < lv.s && isDown){ structure='📉 BOS - BREAK OF STRUCTURE DOWN'; action='SELL'; conf=88; reason=`Price break Support ${lv.s} with strong red candle. Previous Low broken. Trend continue DOWN.`; status='STRONG'; }
- else if(price > prevHigh && hist.length>5){ structure='🔄 CHOCH - CHANGE OF CHARACTER UP'; action='BUY'; conf=85; reason=`CHOCH! Price break previous High ${prevHigh.toFixed(4)}. Sellers don weak, buyers don enter. Trend don change to UP.`; status='STRONG'; }
- else if(price < prevLow && hist.length>5){ structure='🔄 CHOCH - CHANGE OF CHARACTER DOWN'; action='SELL'; conf=85; reason=`CHOCH! Price break previous Low ${prevLow.toFixed(4)}. Buyers don weak, sellers don enter. Trend don change to DOWN.`; status='STRONG'; }
- else { structure='😕 CONFUSED - PRICE IN MIDDLE'; action='WAIT'; conf=48; reason=`Price dey middle between Support ${lv.s} and Resistance ${lv.r}. No touch, no BOS, no CHOCH. WAIT for price to reach level. Hold on.`; status='WAIT'; }
+ if(distS < 0.12){ structure='✅ STRONG SUPPORT (3x Touch)'; action='BUY'; conf=92; reason=`Price touched Support ${lv.s} 3 times and bounced with a strong candle. Buyers have taken control. BOS up confirmed.`; status='STRONG'; }
+ else if(distR < 0.12){ structure='✅ STRONG RESISTANCE (3x Touch)'; action='SELL'; conf=92; reason=`Price touched Resistance ${lv.r} 3 times and was rejected with a strong candle. Sellers have taken control. BOS down confirmed.`; status='STRONG'; }
+ else if(price > lv.r && isUp){ structure='🚀 BOS - BREAK OF STRUCTURE UP'; action='BUY'; conf=88; reason=`Price broke Resistance ${lv.r} with a strong green candle. Previous High is broken. Trend continues UP. Enter on retest.`; status='STRONG'; }
+ else if(price < lv.s && isDown){ structure='📉 BOS - BREAK OF STRUCTURE DOWN'; action='SELL'; conf=88; reason=`Price broke Support ${lv.s} with a strong red candle. Previous Low is broken. Trend continues DOWN.`; status='STRONG'; }
+ else if(price > prevHigh && hist.length>5){ structure='🔄 CHOCH - CHANGE OF CHARACTER UP'; action='BUY'; conf=85; reason=`CHOCH! Price broke previous High ${prevHigh.toFixed(4)}. Sellers are weak, buyers have entered. Trend has changed to UP.`; status='STRONG'; }
+ else if(price < prevLow && hist.length>5){ structure='🔄 CHOCH - CHANGE OF CHARACTER DOWN'; action='SELL'; conf=85; reason=`CHOCH! Price broke previous Low ${prevLow.toFixed(4)}. Buyers are weak, sellers have entered. Trend has changed to DOWN.`; status='STRONG'; }
+ else { structure='😕 CONFUSED - PRICE IN THE MIDDLE'; action='WAIT'; conf=48; reason=`Price is in the middle between Support ${lv.s} and Resistance ${lv.r}. No touch, no BOS, no CHOCH. Please WAIT for price to reach a level.`; status='WAIT'; }
  return {structure, action, conf, reason, status, lv};
 }
 function checkMarket(manual){
@@ -204,12 +203,12 @@ function checkMarket(manual){
   let actionTxt = a.action==='BUY'?'BUY 🟢 - PLACE TRADE' : a.action==='SELL'?'SELL 🔴 - PLACE TRADE':'⏳ WAIT - NO TRADE';
   let tp = a.action==='BUY' ? (price*1.002).toFixed(4) : (price*0.998).toFixed(4);
   let sl = a.action==='BUY' ? (price*0.998).toFixed(4) : (price*1.002).toFixed(4);
-  html+=`<div class="card ${cls}"><b>${p} <span class="realTag">REAL</span> - ${actionTxt} <span class="badge" style="background:${a.conf>=85?'#22c55e':'#facc15'};color:black">${a.conf}%</span></b><br>💰 Real Price: <b>${price>10?'$'+price.toFixed(2):price.toFixed(4)}</b><br><div class="structure">📍 <b>${a.structure}</b><br>Support: <b>${a.lv.s}</b> | Resistance: <b>${a.lv.r}</b><br>📖 ${a.reason}<br>${isStrong?`⏰ <b>ENTER NOW | TP: ${tp} | SL: ${sl}</b><br>✅ <b>CONFIRMED - PLACE TRADE NOW - REAL SIGNAL</b>`:`⏳ <b>WAIT - Market confused. Hold on, no trade for ${p}.</b>`}</div></div>`;
+  html+=`<div class="card ${cls}"><b>${p} <span class="realTag">REAL</span> - ${actionTxt} <span class="badge" style="background:${a.conf>=85?'#22c55e':'#facc15'};color:black">${a.conf}%</span></b><br>💰 Real Price: <b>${price>10?'$'+price.toFixed(2):price.toFixed(4)}</b><br><div class="structure">📍 <b>${a.structure}</b><br>Support: <b>${a.lv.s}</b> | Resistance: <b>${a.lv.r}</b><br>📖 ${a.reason}<br>${isStrong?`⏰ <b>ENTER NOW | TP: ${tp} | SL: ${sl}</b><br>✅ <b>CONFIRMED - PLACE TRADE NOW - REAL SIGNAL</b>`:`⏳ <b>WAIT - Market is confused. Please hold on, no trade for ${p}.</b>`}</div></div>`;
  });
  let alertBox=document.getElementById('alertBox');
  let waitBox=document.getElementById('waitBox');
  if(hasStrong && strongPair){ alertBox.style.display='block'; waitBox.style.display='none'; alertBox.innerText=`🔔 REAL STRONG SIGNAL! ${strongPair.p} - ${strongPair.a.action} NOW! ${strongPair.a.conf}% - REAL MARKET`; }
- else { alertBox.style.display='none'; waitBox.style.display='block'; waitBox.innerText='⏳ WAIT - Real Market Confused, No Strong Signal Yet. Hold On!'; }
+ else { alertBox.style.display='none'; waitBox.style.display='block'; waitBox.innerText='⏳ WAIT - Real Market Is Confused, No Strong Signal Yet. Please Hold On!'; }
  document.getElementById('out').innerHTML=html;
 }
 fetchLive();
